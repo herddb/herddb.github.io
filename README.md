@@ -1,1 +1,1 @@
-# [Majordodo](http://majordodo.org/)
+# [herdDB](http://herddb.org/)
