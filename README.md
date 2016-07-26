@@ -1,1 +1,1 @@
-# [herdDB](http://herddb.org/)
+# [HerdDB](http://herddb.org/)
