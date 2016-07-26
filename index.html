@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>A Distributed Resource Manager | Majordodo</title>
+  <title>A Distributed Database | HerdDB</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="nav-main">
       <div class="wrap">
         <a class="nav-home" href="index.html">          
-          Majordodo
+          HerdDB
         </a>
         <a class="nav-site nav-site-right" href="http://www.magnews.com" target="_blank">
 	  <img alt="Diennea" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAAyCAYAAADoWs9sAAAACXBIWXMAAC4jAAAuIwF4pT92AAAK
@@ -254,14 +254,11 @@ AAAASUVORK5CYII=">
 	</a>
 	
         <ul class="nav-site nav-site-right">
-          <li><a href="https://github.com/diennea/majordodo" target="_blank">GitHub</a></li>
-          <li><a href="https://dev.majordodo.org/jira/" target="_blank">Jira</a></li>
+          <li><a href="https://github.com/diennea/herddb" target="_blank">GitHub</a></li>
         </ul>
         
         <ul class="nav-site nav-site-left">
-          <li><a href="https://majordodo.readme.io" target="_blank">Docs</a></li>
-          <li><a href="https://github.com/diennea/majordodo/releases" target="_blank">Download</a></li>
-          <li><a href="http://lists.majordodo.org/mailman/listinfo" target="_blank">Mailing List</a></li>
+          <li><a href="https://github.com/diennea/herddb/releases" target="_blank">Download</a></li>
         </ul>
       </div>
     </div>
@@ -269,13 +266,13 @@ AAAASUVORK5CYII=">
 
     <div class="hero">
       <div class="wrap">
-        <div class="text"><strong>Majordodo</strong></div>
+        <div class="text"><strong>HerdDB</strong></div>
         <div class="minitext">
-          A Distributed Resource Manager
+          A Distributed Database
         </div>
         <div class="buttons-unit">
-          <a href="https://majordodo.readme.io/docs/getting-started" class="button" target="_blank">Get Started</a>
-          <a href="https://github.com/diennea/majordodo/releases" class="button" target="_blank">Download Majordodo</a>
+          <a href="https://github.com/diennea/herddb" class="button" target="_blank">Get Started</a>
+          <a href="https://github.com/diennea/herddb/releases" class="button" target="_blank">Download HerdDB</a>
         </div>
       </div>
     </div>
@@ -286,11 +283,10 @@ AAAASUVORK5CYII=">
 
 <section class="light home-section">
     <div class="marketing-row">
-      <h3>What is Majordodo?</h3>
+      <h3>What is HerdDB?</h3>
       <p>
-          Majordodo is a replicated service to build complex multi-tenant computing grids. <br />
-          You can view it as a <i>distributed threadpool</i> where tasks are submitted by users and a network of brokers schedules execution on a large set of machines, caring about failures, recovery and priority-based resources assignment. <br />
-          Tasks are implemented in Java and can be submitted and monitored using a simple HTTP REST JSON API. <br />
+          HerdDB is a SQL distributed database implemented in Java. <br />
+          HerdDB has been designed to be embeddable in any Java Virtual Machine and for fast "writes" and primary key read/update data access patterns. <br />
       </p>
   </div>  
 </section>
@@ -302,21 +298,21 @@ AAAASUVORK5CYII=">
 <section class="light home-section">
   <div class="marketing-row">
     <div class="marketing-col">
-      <h3>Multi-Tenancy</h3>
+      <h3>Ease of use</h3>
       <p>
-        Majordodo manages resources for each tenant and guarantees resource access isolation and fair scheduling. Users' execution priorities are dynamic and can be modified at runtime for each and every task, even ones that have already been submitted to the scheduler.
+      	At the low level HerdDB is very similar to a key-value NoSQL database. On top of that an SQL abstraction layer and JDBC Driver support enables every user to leverage existing known-how and port existing applications to HerdDB.
       </p>
     </div>
     <div class="marketing-col">
       <h3>Resiliency</h3>
       <p>
-        Majordodo leverages <a href='http://zookeeper.apache.org' target="_blank">Apache Zookeeper</a> and <a href='http://bookkeeper.apache.org' target="_blank">Apache Bookkeeper</a> to build a fully replicated, shared-nothing, broker architecture without any single point of failure. Workers can be run on commodity-hardware, virtual machines or dynamically provisioned cloud resources which may fail at any time without service interruption. 
+        HerdDB leverages <a href='http://zookeeper.apache.org' target="_blank">Apache Zookeeper</a> and <a href='http://bookkeeper.apache.org' target="_blank">Apache Bookkeeper</a> to build a fully replicated, shared-nothing architecture without any single point of failure.
       </p>
     </div>
     <div class="marketing-col">
       <h3>Scalability</h3>
       <p>
-        Majordodo is designed to manage tasks for thousands of hosts. It is simple to add and remove hosts and resources with dynamic reconfiguration and adaptive tasks scheduling.
+        HerdDB is designed to manage hundreds of tables. It is simple to add and remove hosts and to reconfigure tablespaces to easly distribute the load on multiple systems.
       </p>
     </div>
   </div>
@@ -330,38 +326,10 @@ AAAASUVORK5CYII=">
   <div class="changelog">
       <h3>Change log</h3>
       <div class="releaserow">
-        <h4>0.5.0</h4>
-	<p>
-		07/07/2016 - <a href="https://dev.majordodo.org/jira/secure/ReleaseNote.jspa?projectId=10000&version=10208" target="_blank">Release notes</a><br>
-		Majordodo 0.5.0 is a bugfix release
-        </p>
-      </div>
-      <div class="releaserow">
-        <h4>0.4.0</h4>
-	<p>
-		14/06/2016 - <a href="https://dev.majordodo.org/jira/secure/ReleaseNote.jspa?projectId=10000&version=10205" target="_blank">Release notes</a><br>
-		Majordodo 0.4.0 update BookKeeper to 4.4.0
-        </p>
-      </div>
-      <div class="releaserow">
-        <h4>0.3.0</h4>
-	<p>
-		12/02/2016 - <a href="https://dev.majordodo.org/jira/secure/ReleaseNote.jspa?projectId=10000&version=10204" target="_blank">Release notes</a><br>
-		Majordodo 0.3.0 is a bugfix release
-        </p>
-      </div>
-      <div class="releaserow">
-        <h4>0.2.0</h4>
-	<p>
-		21/12/2015 - <a href="https://dev.majordodo.org/jira/secure/ReleaseNote.jspa?projectId=10000&version=10004" target="_blank">Release notes</a><br>
-		Majordodo 0.2.0 introduces new utility class <i>TaskSubmitter</i> to serialize executors code
-        </p>
-      </div>
-      <div class="releaserow">
         <h4>0.1.0</h4>
 	<p>
-		03/11/2015 - <a href="https://dev.majordodo.org/jira/secure/ReleaseNote.jspa?projectId=10000&version=10200" target="_blank">Release notes</a><br>
-		Majordodo 0.1.0, first public release
+		22/07/2016 - <a href="https://github.com/diennea/herddb/releases" target="_blank">Release notes</a><br>
+		HerdDB 0.1.0, first public release
         </p>
       </div>
 </section>
