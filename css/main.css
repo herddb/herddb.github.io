@@ -390,12 +390,12 @@ h6:hover .hash-link {
     color: #fff
 }
 .nav-main .nav-site a.active {
-    color: #09A07C;
-    border-bottom: 3px solid #09A07C;
+    color: #e65c00;
+    border-bottom: 3px solid #e65c00;
     background: #333
 }
 .nav-main .nav-home {
-    color: #09A07C;
+    color: #e65c00;
     font-size: 24px;
     line-height: 50px;
     height: 50px;
@@ -430,7 +430,7 @@ h6:hover .hash-link {
     text-transform: uppercase
 }
 .hero strong {
-    color: #09A07C;
+    color: #e65c00;
     font-weight: 400
 }
 .buttons-unit {
@@ -438,11 +438,11 @@ h6:hover .hash-link {
     text-align: center
 }
 .buttons-unit a {
-    color: #09A07C
+    color: #e65c00
 }
 .buttons-unit .button {
     font-size: 24px;
-    background: #09A07C;
+    background: #e65c00;
     color: #fafafa
 }
 .buttons-unit .button:active {
@@ -478,10 +478,10 @@ h6:hover .hash-link {
 }
 .nav-docs a:hover {
     text-decoration: none;
-    color: #09A07C
+    color: #e65c00
 }
 .nav-docs a.active {
-    color: #09A07C
+    color: #e65c00
 }
 .nav-docs .nav-docs-section {
     border-bottom: 1px solid #ccc;
